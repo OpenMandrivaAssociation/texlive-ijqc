@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /biblio/bibtex/contrib/ijqc
+# catalog-date 2006-08-27 16:41:02 +0100
+# catalog-license lppl
+# catalog-version 1.2
 Name:		texlive-ijqc
 Version:	1.2
 Release:	1
@@ -43,6 +49,7 @@ is provided without any warranty one could ever think of.
 %doc %{_texmfdistdir}/doc/bibtex/ijqc/mybib.bib
 %doc %{_texmfdistdir}/doc/bibtex/ijqc/xampl.pdf
 %doc %{_texmfdistdir}/doc/bibtex/ijqc/xampl.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ is provided without any warranty one could ever think of.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
