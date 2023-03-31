@@ -1,6 +1,6 @@
 Name:		texlive-ijqc
 Version:	15878
-Release:	1
+Release:	2
 Summary:	BibTeX style file for the Intl. J. Quantum Chem
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/biblio/bibtex/contrib/ijqc
